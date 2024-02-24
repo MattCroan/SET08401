@@ -24,12 +24,33 @@ header h1 {
     font-size: 24px;
 }
 
-/* Navigation styles */
-nav {
+/* Main content styles */
+main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+}
+
+/* Cryptocurrency prices section styles */
+.prices {
+    margin-bottom: 20px; /* Add some space between sections */
+}
+
+.prices h2 {
+    margin-bottom: 10px;
+}
+
+/* Menu bar styles */
+.menu-bar {
+    width: 100%; /* Occupy full width of the container */
+}
+
+nav {
+    background-color: #1D2330;
+    color: #fff;
     padding: 10px 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -50,11 +71,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
 }
 
 /* Footer styles */
