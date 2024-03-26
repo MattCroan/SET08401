@@ -4,72 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Page</title>
-    <style>
-        /* CSS styles for the menu bar */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        /* CSS styles for the cryptocurrency price tracker banner */
-        .price-tracker-banner {
-            background-color: #1D2330;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .price-tracker-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .price-tracker-content iframe {
-            width: 100%;
-            height: 36px;
-            border: 0;
-        }
-        /* CSS styles for the widgets */
-        .widget-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-            flex-wrap: wrap; /* Allow widgets to wrap on smaller screens */
-        }
-        .widget {
-            width: 300px; /* Increase width for better visibility */
-            height: 350px; /* Adjust height for better layout */
-            background-color: #1D2330;
-            overflow: hidden;
-            border: 1px solid #282E3B;
-            border-radius: 4px;
-            box-shadow: inset 0 -20px 0 0 #262B38;
-            padding: 10px; /* Add padding for better spacing */
-            margin: 10px; /* Add margin for better spacing */
-        }
-        .widget iframe {
-            width: 100%;
-            height: calc(100% - 40px); /* Adjust height to accommodate footer and padding */
-            border: 0;
-        }
-        .footer {
-            background-color: #1D2330;
-            color: #FFFFFF;
-            padding: 20px;
-            text-align: center;
-            clear: both; /* Ensure footer stays below widgets */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Menu bar -->
@@ -86,35 +21,27 @@
         </nav>
     </header>
 
-    <!-- Cryptocurrency price tracker -->
+    <!-- Cryptocurrency price tracker banner -->
     <div class="price-tracker-banner">
         <div class="price-tracker-content">
             <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1508&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0"></iframe>
         </div>
     </div>
 
-    <!-- Cryptocurrency price widgets -->
+    <!-- Widgets -->
     <div class="widget-container">
-        <!-- Live price tracker -->
+        <!-- Volume 24 hour tracker -->
         <div class="widget">
-            <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1508&invert_hover=no" scrolling="auto" frameborder="0"></iframe>
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0"></iframe>
         </div>
-        <!-- Price chart -->
+        <!-- Converter -->
         <div class="widget">
-            <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1508" scrolling="auto" frameborder="0"></iframe>
-        </div>
-        <!-- 24-hour volume tracker -->
-        <div class="widget">
-            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=dark&coin_id=859&pref_coin_id=1505" scrolling="auto" frameborder="0"></iframe>
-        </div>
-        <!-- Currency converter -->
-        <div class="widget">
-            <iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" scrolling="auto" frameborder="0"></iframe>
+            <iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="100%" height="310px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0"></iframe>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <p>&copy; 2024 Crypto Price Tracker</p>
     </footer>
 </body>
