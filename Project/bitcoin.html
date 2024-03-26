@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin Page</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* CSS styles for the widgets */
+        .widget-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .widget {
+            width: 250px;
+            height: 320px;
+            background-color: #1D2330;
+            overflow: hidden;
+            border: 1px solid #282E3B;
+            border-radius: 4px;
+            box-shadow: inset 0 -20px 0 0 #262B38;
+            padding: 1px;
+            margin: 0 10px;
+        }
+        .widget iframe {
+            width: 100%;
+            height: calc(100% - 14px); /* Adjust height to accommodate padding */
+            border: 0;
+        }
+        .footer {
+            background-color: #1D2330;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bitcoin Page</h1>
-        <nav>
-            <!-- Menu bar  -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bitcoin.html">Bitcoin</a></li>
-                <li><a href="ethereum.html">Ethereum</a></li>
-                <li><a href="bsc.html">Binance Smart Chain</a></li>
-                <li><a href="solana.html">Solana</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Cryptocurrency price widgets -->
+    <div class="widget-container">
+        <div class="widget">
+            <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1508&invert_hover=no" scrolling="auto" frameborder="0"></iframe>
+        </div>
+        <div class="widget">
+            <iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1508" scrolling="auto" frameborder="0"></iframe>
+        </div>
+        <div class="widget">
+            <iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=dark&coin_id=859&pref_coin_id=1505" scrolling="auto" frameborder="0"></iframe>
+        </div>
+        <div class="widget">
+            <iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" scrolling="auto" frameborder="0"></iframe>
+        </div>
+    </div>
 
-    <main>
-        <section class="crypto-info">
-            <h2>Bitcoin Information</h2>
-            <!-- Bitcoin information -->
-            <div class="info-item">
-                <h3>Current Price</h3>
-                <!-- Live price widget -->
-                <div style="height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1508" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
-            </div>
-            <div class="info-item">
-                <h3>24 Hour Volume</h3>
-                <!-- 24-hour volume widget -->
-                <div style="width: 250px; height:220px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:220px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px;"><div style="height:200px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=single_v2&theme=dark&coin_id=859&pref_coin_id=1505" width="250" height="196px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
-            </div>
-          
-        </section>
-
-        <!-- Convert fiat to Cryto feature -->
-        <section class="conversion">
-            <h2>Convert Currency to Bitcoin</h2>
-            <!--  Conversion widget -->
-            <div style="width: 250px; height:335px; background-color: #232937; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:335px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;margin: 0;width: 250px;padding:1px;padding: 0px; margin: 0px;"><div style="height:315px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=converter&theme=dark" width="250" height="310px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <p>&copy; 2024 Crypto Price Tracker</p>
     </footer>
 </body>
