@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binance Smart Chain Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
 </head>
 <body>
     <header>
@@ -22,39 +22,56 @@
         </ul>
     </nav>
 
-    <!-- Cryptocurrency price tracker banner -->
     <div class="price-tracker-banner">
         <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1508&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0"></iframe>
     </div>
 
-    <!-- Content TO GO HERE MATT -->
     <main>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/G0gmPW8N88M?si=McEdmgAI-8iqzQWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-    {
-    "width": "980",
-    "height": "610",
-    "symbol": "BINANCE:BNBUSD",
-    "interval": "D",
-    "timezone": "Etc/UTC",
-    "theme": "dark",
-    "style": "1",
-    "locale": "en",
-    "enable_publishing": false,
-    "allow_symbol_change": true,
-    "calendar": false,
-    "support_host": "https://www.tradingview.com"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+        <section class="bitcoin-info">
+            <h2>What Is Binance Smart Chain?</h2>
+            <p>Binance Smart Chain (BSC) is a blockchain platform developed by Binance, one of the largest cryptocurrency exchanges in the world. It aims to provide a high-performance, low-fee blockchain for decentralized finance (DeFi) applications and digital asset tokenization.</p>
+            <p>BSC runs in parallel with Binance Chain, offering compatibility with the Ethereum Virtual Machine (EVM). This means that developers can easily port their Ethereum-based projects to BSC, taking advantage of its higher throughput and lower transaction costs.</p>
+            <p>BSC has gained popularity for its support of decentralized applications (dApps), decentralized finance (DeFi) protocols, and non-fungible tokens (NFTs).</p>
+            <p>&nbsp;</p>
+            <p>Source: <a href="https://www.binance.org/en/smartChain">Binance Smart Chain</a></p>
+        </section>
+
+        <section class="bitcoin-video">
+            <h2>Binance Smart Chain Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G0gmPW8N88M?si=McEdmgAI-8iqzQWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Learn more about Binance Smart Chain and its features in this video.</p>
+        </section>
+
+        <section class="bitcoin-chart">
+            <h2>Binance Smart Chain Price Chart</h2>
+            <div class="chart-container">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                    {
+                        "width": "980",
+                        "height": "610",
+                        "symbol": "BINANCE:BNBUSD",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "en",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "calendar": false,
+                        "support_host": "https://www.tradingview.com"
+                    }
+                    </script>
+                </div>
+            </div>
+            <p>Stay up-to-date with the latest Binance Smart Chain price movements with this interactive chart.</p>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Crypto Price Tracker</p>
     </footer>
